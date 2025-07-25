@@ -1,0 +1,41 @@
+[
+  {
+    "id": "user001",
+    "username": "HumanRightsChampion",
+    "walletId": "icp1xkj9q8d3m7n5p2r4s6t8v0w2y4z6a8c0e2g4i6k8m0o2q4s6u8w0y2z4a6c8e0",
+    "totalKnowledgePoints": 2450,
+    "currentKnowledgePoints": 1200,
+    "totalUsers": 5,
+    "quizCompleted": 15,
+    "chatSessions": 8,
+    "nftsOwned": 3,
+    "currentNFTs": 3,
+    "lessonsCompleted": 12,
+    "gamesPlayed": 6,
+    "articlesWritten": 4,
+    "questionsAdded": 2,
+    "achievements": [
+      {
+        "id": "top_learner",
+        "title": "Top Learner",
+        "description": "Completed 10+ learning modules",
+        "icon": "🏆",
+        "earnedAt": "2024-01-15"
+      },
+      {
+        "id": "quiz_master",
+        "title": "Quiz Master", 
+        "description": "Scored 90%+ on 5 consecutive quizzes",
+        "icon": "🧠",
+        "earnedAt": "2024-01-20"
+      },
+      {
+        "id": "content_creator",
+        "title": "Content Creator",
+        "description": "Published 3+ articles",
+        "icon": "✍️",
+        "earnedAt": "2024-01-25"
+      }
+    ]
+  }
+]

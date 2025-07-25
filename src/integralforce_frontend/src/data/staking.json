@@ -1,0 +1,32 @@
+[
+  {
+    "id": "stake_1",
+    "name": "Starter Stake",
+    "investmentKP": 10,
+    "returnKP": 20,
+    "questionsRequired": 5,
+    "duration": "3 days",
+    "multiplier": 2,
+    "difficulty": "easy"
+  },
+  {
+    "id": "stake_2", 
+    "name": "Moderate Stake",
+    "investmentKP": 50,
+    "returnKP": 150,
+    "questionsRequired": 10,
+    "duration": "1 week",
+    "multiplier": 3,
+    "difficulty": "moderate"
+  },
+  {
+    "id": "stake_3",
+    "name": "Advanced Stake", 
+    "investmentKP": 100,
+    "returnKP": 400,
+    "questionsRequired": 15,
+    "duration": "2 weeks",
+    "multiplier": 4,
+    "difficulty": "hard"
+  }
+]

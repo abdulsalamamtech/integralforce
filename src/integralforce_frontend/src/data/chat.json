@@ -1,0 +1,59 @@
+[
+  {
+    "id": "chat001",
+    "title": "Understanding Basic Human Rights",
+    "description": "Learn about fundamental human rights and their importance",
+    "cost": 2,
+    "category": "Basics",
+    "conversation": [
+      {
+        "id": "msg001",
+        "type": "ai",
+        "content": "Hello! I'm here to help you learn about human rights. What would you like to discuss today?",
+        "timestamp": "2024-01-01T10:00:00Z"
+      },
+      {
+        "id": "msg002", 
+        "type": "user",
+        "content": "What are human rights?",
+        "timestamp": "2024-01-01T10:01:00Z"
+      },
+      {
+        "id": "msg003",
+        "type": "ai", 
+        "content": "Human rights are fundamental rights and freedoms that belong to every person in the world, from birth until death. They include civil and political rights like freedom of speech, as well as economic, social and cultural rights like the right to education and healthcare.",
+        "timestamp": "2024-01-01T10:01:30Z"
+      }
+    ]
+  },
+  {
+    "id": "chat002",
+    "title": "Children's Rights Protection",
+    "description": "Explore rights specific to children and youth",
+    "cost": 2,
+    "category": "Children",
+    "conversation": [
+      {
+        "id": "msg004",
+        "type": "ai",
+        "content": "Let's talk about children's rights! These are special protections and rights that ensure kids can grow up safely and reach their full potential.",
+        "timestamp": "2024-01-01T11:00:00Z"
+      }
+    ]
+  },
+  {
+    "id": "chat003",
+    "title": "Digital Rights & Privacy",
+    "description": "Learn about privacy and digital rights in the modern world",
+    "cost": 2,
+    "category": "Technology",
+    "conversation": [
+      {
+        "id": "msg005",
+        "type": "ai",
+        "content": "Digital rights are human rights in the digital age. This includes privacy, freedom of expression online, and access to information.",
+        "timestamp": "2024-01-01T12:00:00Z"
+      }
+    ]
+  }
+]

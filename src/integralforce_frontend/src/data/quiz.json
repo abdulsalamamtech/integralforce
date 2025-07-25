@@ -1,0 +1,89 @@
+{
+  "easy": [
+    {
+      "id": "q001",
+      "question": "What are human rights?",
+      "options": [
+        "Rules only for adults",
+        "Basic rights for everyone",
+        "Laws only for rich people",
+        "Rights only for citizens"
+      ],
+      "answer": "Basic rights for everyone",
+      "points": 10,
+      "explanation": "Human rights are basic rights and freedoms that belong to every person in the world."
+    },
+    {
+      "id": "q002",
+      "question": "When was the Universal Declaration of Human Rights adopted?",
+      "options": ["1945", "1948", "1950", "1960"],
+      "answer": "1948",
+      "points": 10,
+      "explanation": "The Universal Declaration of Human Rights was adopted by the UN on December 10, 1948."
+    },
+    {
+      "id": "q003",
+      "question": "How many articles are in the Universal Declaration of Human Rights?",
+      "options": ["25", "30", "35", "40"],
+      "answer": "30",
+      "points": 10,
+      "explanation": "The Universal Declaration contains exactly 30 articles outlining fundamental rights."
+    }
+  ],
+  "moderate": [
+    {
+      "id": "q101",
+      "question": "Which organization adopted the Universal Declaration of Human Rights?",
+      "options": [
+        "World Bank",
+        "United Nations",
+        "European Union",
+        "International Court"
+      ],
+      "answer": "United Nations",
+      "points": 10,
+      "explanation": "The UN General Assembly adopted the Universal Declaration on December 10, 1948."
+    },
+    {
+      "id": "q102",
+      "question": "What does 'inalienable' mean in the context of human rights?",
+      "options": [
+        "Can be sold",
+        "Cannot be taken away",
+        "Only for adults",
+        "Government granted"
+      ],
+      "answer": "Cannot be taken away",
+      "points": 10,
+      "explanation": "Inalienable rights cannot be taken away, sold, or transferred from one person to another."
+    }
+  ],
+  "hard": [
+    {
+      "id": "q201",
+      "question": "Which principle states that human rights apply to everyone regardless of nationality, race, or religion?",
+      "options": [
+        "Universality",
+        "Interdependence", 
+        "Indivisibility",
+        "Accountability"
+      ],
+      "answer": "Universality",
+      "points": 10,
+      "explanation": "The principle of universality means human rights apply to all people everywhere."
+    },
+    {
+      "id": "q202",
+      "question": "What is the relationship between civil and political rights vs economic, social and cultural rights?",
+      "options": [
+        "They are separate categories",
+        "Civil rights are more important",
+        "They are interdependent and indivisible",
+        "Economic rights come first"
+      ],
+      "answer": "They are interdependent and indivisible",
+      "points": 10,
+      "explanation": "All human rights are interconnected and equally important for human dignity."
+    }
+  ]
+}

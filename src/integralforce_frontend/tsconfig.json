@@ -1,5 +1,9 @@
 {
   "compilerOptions": {
+    "baseUrl": ".", // This is important, it defines the base for paths
+    "paths": {
+      "@/*": ["./src/*"] // This maps @/anything to ./src/anything
+    },
     "allowJs": false,
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": false,

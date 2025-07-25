@@ -1,0 +1,182 @@
+[
+  {
+    "id": "blockchain-basics",
+    "title": "Blockchain Fundamentals Quiz",
+    "description": "Test your knowledge of basic blockchain concepts",
+    "icon": "🔗",
+    "difficulty": "Easy",
+    "kpReward": 15,
+    "kpCost": 5,
+    "timeLimit": 300,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is a blockchain?",
+        "options": [
+          "A distributed ledger technology",
+          "A type of cryptocurrency",
+          "A mining hardware",
+          "A wallet application"
+        ],
+        "correct": 0,
+        "explanation": "Blockchain is a distributed ledger technology that maintains a continuously growing list of records."
+      },
+      {
+        "id": 2,
+        "question": "What makes blockchain secure?",
+        "options": [
+          "Password protection",
+          "Cryptographic hashing",
+          "User permissions",
+          "Server encryption"
+        ],
+        "correct": 1,
+        "explanation": "Blockchain uses cryptographic hashing to secure data and ensure immutability."
+      },
+      {
+        "id": 3,
+        "question": "What is decentralization in blockchain?",
+        "options": [
+          "Having one central authority",
+          "Distributed across multiple nodes",
+          "Controlled by governments",
+          "Managed by banks"
+        ],
+        "correct": 1,
+        "explanation": "Decentralization means the blockchain is distributed across multiple nodes without a central authority."
+      }
+    ]
+  },
+  {
+    "id": "crypto-trading",
+    "title": "Cryptocurrency Trading Challenge",
+    "description": "Learn about crypto trading strategies and market dynamics",
+    "icon": "💹",
+    "difficulty": "Medium",
+    "kpReward": 25,
+    "kpCost": 10,
+    "timeLimit": 450,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What does HODL mean in cryptocurrency?",
+        "options": [
+          "Hold On for Dear Life",
+          "High Order Digital Ledger",
+          "Holding Original Data Links",
+          "Hash Output Distribution Logic"
+        ],
+        "correct": 0,
+        "explanation": "HODL means 'Hold On for Dear Life' - a strategy of holding cryptocurrency long-term."
+      },
+      {
+        "id": 2,
+        "question": "What is market volatility?",
+        "options": [
+          "Stable price movement",
+          "Price fluctuations over time",
+          "Fixed exchange rates",
+          "Government regulations"
+        ],
+        "correct": 1,
+        "explanation": "Market volatility refers to the degree of price fluctuations in cryptocurrency markets."
+      },
+      {
+        "id": 3,
+        "question": "What is a bull market?",
+        "options": [
+          "When prices are falling",
+          "When prices are rising",
+          "When trading is stopped",
+          "When markets are closed"
+        ],
+        "correct": 1,
+        "explanation": "A bull market is characterized by rising prices and investor optimism."
+      },
+      {
+        "id": 4,
+        "question": "What is DCA strategy?",
+        "options": [
+          "Dollar Cost Averaging",
+          "Digital Coin Analysis",
+          "Decentralized Currency Application",
+          "Dynamic Cost Assessment"
+        ],
+        "correct": 0,
+        "explanation": "Dollar Cost Averaging (DCA) is an investment strategy where you invest fixed amounts regularly."
+      }
+    ]
+  },
+  {
+    "id": "defi-advanced",
+    "title": "DeFi Master Challenge",
+    "description": "Advanced concepts in Decentralized Finance",
+    "icon": "🏦",
+    "difficulty": "Hard",
+    "kpReward": 40,
+    "kpCost": 15,
+    "timeLimit": 600,
+    "questions": [
+      {
+        "id": 1,
+        "question": "What is yield farming in DeFi?",
+        "options": [
+          "Growing crops on blockchain",
+          "Earning rewards by providing liquidity",
+          "Mining new cryptocurrencies",
+          "Trading agricultural commodities"
+        ],
+        "correct": 1,
+        "explanation": "Yield farming involves providing liquidity to DeFi protocols to earn rewards."
+      },
+      {
+        "id": 2,
+        "question": "What is an AMM?",
+        "options": [
+          "Automated Market Maker",
+          "Advanced Mining Machine",
+          "Asset Management Module",
+          "Algorithmic Money Manager"
+        ],
+        "correct": 0,
+        "explanation": "AMM (Automated Market Maker) is a protocol that uses algorithms to price assets."
+      },
+      {
+        "id": 3,
+        "question": "What is impermanent loss?",
+        "options": [
+          "Permanent loss of funds",
+          "Temporary price volatility",
+          "Loss from providing liquidity vs holding",
+          "Transaction fee costs"
+        ],
+        "correct": 2,
+        "explanation": "Impermanent loss occurs when providing liquidity results in less value than simply holding the assets."
+      },
+      {
+        "id": 4,
+        "question": "What is a liquidity pool?",
+        "options": [
+          "A swimming pool for crypto miners",
+          "Funds locked in smart contracts for trading",
+          "A backup wallet system",
+          "A type of cryptocurrency exchange"
+        ],
+        "correct": 1,
+        "explanation": "A liquidity pool consists of funds locked in smart contracts to facilitate trading."
+      },
+      {
+        "id": 5,
+        "question": "What is a flash loan?",
+        "options": [
+          "A loan with very fast approval",
+          "An uncollateralized loan within one transaction",
+          "A loan backed by lightning network",
+          "A short-term collateralized loan"
+        ],
+        "correct": 1,
+        "explanation": "Flash loans are uncollateralized loans that must be borrowed and repaid within the same transaction."
+      }
+    ]
+  }
+]

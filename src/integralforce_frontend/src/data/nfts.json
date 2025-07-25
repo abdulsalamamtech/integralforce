@@ -1,0 +1,92 @@
+[
+  {
+    "id": "nft001",
+    "name": "Human Rights Champion",
+    "description": "Awarded for completing all basic human rights modules",
+    "image": "🏆",
+    "rarity": "Legendary",
+    "cost": 500,
+    "category": "Achievement",
+    "attributes": {
+      "Education Level": "Expert",
+      "Rights Knowledge": "100%",
+      "Completion Rate": "Perfect"
+    },
+    "available": true
+  },
+  {
+    "id": "nft002", 
+    "name": "Quiz Master Badge",
+    "description": "Earned by achieving perfect scores in 10 quizzes",
+    "image": "🎯",
+    "rarity": "Epic",
+    "cost": 300,
+    "category": "Achievement",
+    "attributes": {
+      "Quiz Performance": "Perfect",
+      "Streak": "10+",
+      "Accuracy": "100%"
+    },
+    "available": true
+  },
+  {
+    "id": "nft003",
+    "name": "Digital Rights Defender",
+    "description": "Special NFT for mastering digital privacy rights",
+    "image": "🛡️",
+    "rarity": "Rare",
+    "cost": 200,
+    "category": "Specialization",
+    "attributes": {
+      "Specialty": "Digital Rights",
+      "Knowledge Depth": "Advanced",
+      "Certification": "Verified"
+    },
+    "available": true
+  },
+  {
+    "id": "nft004",
+    "name": "Early Adopter",
+    "description": "Limited edition NFT for platform pioneers",
+    "image": "🌟",
+    "rarity": "Legendary",
+    "cost": 1000,
+    "category": "Limited",
+    "attributes": {
+      "Series": "Genesis",
+      "Edition": "1 of 100",
+      "Status": "Pioneer"
+    },
+    "available": false
+  },
+  {
+    "id": "nft005",
+    "name": "Learning Streak",
+    "description": "Awarded for 30 consecutive days of learning",
+    "image": "🔥",
+    "rarity": "Epic",
+    "cost": 250,
+    "category": "Consistency",
+    "attributes": {
+      "Streak": "30 Days",
+      "Dedication": "High",
+      "Consistency": "Perfect"
+    },
+    "available": true
+  },
+  {
+    "id": "nft006",
+    "name": "Community Helper",
+    "description": "Recognition for helping other learners",
+    "image": "🤝",
+    "rarity": "Rare",
+    "cost": 150,
+    "category": "Community",
+    "attributes": {
+      "Helpfulness": "Outstanding",
+      "Community Impact": "High",
+      "Support Given": "Extensive"
+    },
+    "available": true
+  }
+]

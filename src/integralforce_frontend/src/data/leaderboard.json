@@ -1,0 +1,47 @@
+[
+  {
+    "id": "user001",
+    "username": "HumanRightsChampion",
+    "points": 2450,
+    "rank": 1,
+    "percentage": 12.3,
+    "avatar": "🏆",
+    "badges": ["Top Learner", "Quiz Master", "Staking Pro"]
+  },
+  {
+    "id": "user002", 
+    "username": "JusticeSeeker",
+    "points": 1980,
+    "rank": 2,
+    "percentage": 9.9,
+    "avatar": "⚖️",
+    "badges": ["Knowledge Guru", "Chat Expert"]
+  },
+  {
+    "id": "user003",
+    "username": "EqualityAdvocate", 
+    "points": 1750,
+    "rank": 3,
+    "percentage": 8.8,
+    "avatar": "🤝",
+    "badges": ["Fast Learner", "Quiz Pro"]
+  },
+  {
+    "id": "user004",
+    "username": "RightsDefender",
+    "points": 1520,
+    "rank": 4, 
+    "percentage": 7.6,
+    "avatar": "🛡️",
+    "badges": ["Consistent Learner"]
+  },
+  {
+    "id": "user005",
+    "username": "FreedomFighter",
+    "points": 1340,
+    "rank": 5,
+    "percentage": 6.7,
+    "avatar": "🕊️",
+    "badges": ["Active Participant"]
+  }
+]

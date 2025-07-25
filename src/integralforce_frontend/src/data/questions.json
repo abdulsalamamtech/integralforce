@@ -1,0 +1,51 @@
+[
+  {
+    "id": "q001",
+    "type": "multiple-choice",
+    "category": "Human Rights",
+    "question": "Which document established the Universal Declaration of Human Rights?",
+    "options": [
+      "United Nations General Assembly",
+      "International Court of Justice", 
+      "European Union",
+      "World Health Organization"
+    ],
+    "correctAnswer": 0,
+    "explanation": "The Universal Declaration of Human Rights was adopted by the United Nations General Assembly on December 10, 1948.",
+    "difficulty": "easy",
+    "points": 10,
+    "addedBy": "user001",
+    "addedAt": "2024-01-20T10:00:00Z"
+  },
+  {
+    "id": "q002",
+    "type": "true-false",
+    "category": "Digital Rights",
+    "question": "Privacy is considered a fundamental human right in the digital age.",
+    "options": ["True", "False"],
+    "correctAnswer": 0,
+    "explanation": "Privacy is indeed recognized as a fundamental human right, and this extends to digital privacy in our interconnected world.",
+    "difficulty": "easy",
+    "points": 5,
+    "addedBy": "user001",
+    "addedAt": "2024-01-22T15:30:00Z"
+  },
+  {
+    "id": "q003",
+    "type": "multiple-choice",
+    "category": "Social Justice",
+    "question": "What is the primary goal of restorative justice?",
+    "options": [
+      "Punishment of offenders",
+      "Healing and repairing harm",
+      "Deterring future crimes",
+      "Protecting society from criminals"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Restorative justice focuses on healing and repairing the harm caused by crime, involving victims, offenders, and the community in the process.",
+    "difficulty": "medium",
+    "points": 15,
+    "addedBy": "user002",
+    "addedAt": "2024-01-25T11:45:00Z"
+  }
+]
