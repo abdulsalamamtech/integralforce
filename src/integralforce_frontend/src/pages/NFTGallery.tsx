@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { useUser } from '@/context/UserContext';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { useToast } from '@/components/ui/use-toast';
-import nftData from '@/data/nfts.json';
+import { useUser } from '../context/UserContext';
+import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
+import { Button } from '../components/ui/button';
+import { Badge } from '../components/ui/badge';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '../components/ui/tabs';
+import { useToast } from '../components/ui/use-toast';
+import nftData from '../data/nfts.json';
 
 interface NFT {
   id: string;
@@ -15,7 +15,7 @@ interface NFT {
   rarity: string;
   cost: number;
   category: string;
-  attributes: Record<string, string>;
+  attributes: Record<string, string | undefined>;
   available: boolean;
 }
 

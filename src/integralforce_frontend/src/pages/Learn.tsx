@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { useUser } from '@/context/UserContext';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { useUser } from '../context/UserContext';
+import { Button } from '../components/ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
 import { useNavigate, useSearchParams } from 'react-router-dom';
-import learnData from '@/data/learn.json';
+import learnData from '../data/learn.json';
 
 export const Learn: React.FC = () => {
   const { user, addKP, markContentComplete } = useUser();

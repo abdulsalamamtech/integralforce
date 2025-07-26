@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { useUser } from '@/context/UserContext';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { useUser } from '../context/UserContext';
+import { Button } from '../components/ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
 import { useNavigate, useSearchParams } from 'react-router-dom';
 
 export const SelectLevel: React.FC = () => {

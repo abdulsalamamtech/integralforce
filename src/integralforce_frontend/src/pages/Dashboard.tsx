@@ -1,8 +1,8 @@
 import React from 'react';
-import { useUser } from '@/context/UserContext';
-import { KPDisplay } from '@/components/KPDisplay';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { useUser } from '../context/UserContext';
+import { KPDisplay } from '../components/KPDisplay';
+import { Button } from '../components/ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
 import { useNavigate } from 'react-router-dom';
 
 export const Dashboard: React.FC = () => {

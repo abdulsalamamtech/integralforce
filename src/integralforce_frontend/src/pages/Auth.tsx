@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { useUser } from '@/context/UserContext';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { useUser } from '../context/UserContext';
+import { Button } from '../components/ui/button';
+import { Input } from '../components/ui/input';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
 import { useNavigate, Link } from 'react-router-dom';
-import { Header } from '@/components/Header';
+import { Header } from '../components/Header';
 
 export const Auth: React.FC = () => {
   const [username, setUsername] = useState('');

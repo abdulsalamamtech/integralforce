@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { useUser } from '@/context/UserContext';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
+import { useUser } from '../context/UserContext';
+import { Button } from '../components/ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
 import { useNavigate, useSearchParams } from 'react-router-dom';
-import quizData from '@/data/quiz.json';
+import quizData from '../data/quiz.json';
 
 interface Question {
   id: string;

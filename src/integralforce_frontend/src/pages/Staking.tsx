@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import { useUser } from '@/context/UserContext';
+import { useUser } from '../context/UserContext';
 import { useNavigate } from 'react-router-dom';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
-import { Progress } from '@/components/ui/progress';
-import { useToast } from '@/hooks/use-toast';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
+import { Button } from '../components/ui/button';
+import { Badge } from '../components/ui/badge';
+import { Progress } from '../components/ui/progress';
+import { useToast } from '../hooks/use-toast';
 import { Coins, TrendingUp, Clock, Target, CheckCircle } from 'lucide-react';
-import stakingData from '@/data/staking.json';
+import stakingData from '../data/staking.json';
 
 interface StakingOption {
   id: string;
@@ -17,7 +17,9 @@ interface StakingOption {
   questionsRequired: number;
   duration: string;
   multiplier: number;
-  difficulty: 'easy' | 'moderate' | 'hard';
+  // difficulty: 'easy' | 'moderate' | 'hard';
+  difficulty: string;
+
 }
 
 export const Staking: React.FC = () => {

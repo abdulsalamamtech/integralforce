@@ -1,8 +1,8 @@
 import React, { useState, useMemo } from 'react';
-import { useUser } from '@/context/UserContext';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
-import { Button } from '@/components/ui/button';
+import { useUser } from '../context/UserContext';
+import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
+import { Badge } from '../components/ui/badge';
+import { Button } from '../components/ui/button';
 import { 
   Table, 
   TableBody, 
@@ -10,7 +10,7 @@ import {
   TableHead, 
   TableHeader, 
   TableRow 
-} from '@/components/ui/table';
+} from '../components/ui/table';
 import {
   Pagination,
   PaginationContent,
@@ -18,9 +18,9 @@ import {
   PaginationLink,
   PaginationNext,
   PaginationPrevious,
-} from '@/components/ui/pagination';
+} from '../components/ui/pagination';
 import { ChevronUp, ChevronDown } from 'lucide-react';
-import leaderboardData from '@/data/leaderboard.json';
+import leaderboardData from '../data/leaderboard.json';
 
 interface LeaderboardUser {
   id: string;

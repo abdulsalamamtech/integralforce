@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate, useSearchParams } from 'react-router-dom';
-import { useUser } from '@/context/UserContext';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
-import { Progress } from '@/components/ui/progress';
+import { useUser } from '../context/UserContext';
+import { Button } from '../components/ui/button';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
+import { Badge } from '../components/ui/badge';
+import { Progress } from '../components/ui/progress';
 import { Clock, Trophy, Coins, ArrowLeft, CheckCircle, XCircle } from 'lucide-react';
-import { useToast } from '@/hooks/use-toast';
-import gamesData from '@/data/games.json';
+import { useToast } from '../hooks/use-toast';
+import gamesData from '../data/games.json';
 
 interface Game {
   id: string;
@@ -62,7 +62,9 @@ export const Games: React.FC = () => {
   }, [user, navigate]);
 
   useEffect(() => {
-    let timer: NodeJS.Timeout;
+    // let timer: NodeJS.Timeout;
+    let timer: number;
+
     if (gameState === 'playing' && timeLeft > 0) {
       timer = setTimeout(() => setTimeLeft(timeLeft - 1), 1000);
     } else if (gameState === 'playing' && timeLeft === 0) {

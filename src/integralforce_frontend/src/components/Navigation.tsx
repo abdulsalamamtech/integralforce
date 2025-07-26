@@ -27,7 +27,7 @@ export const Navigation = () => {
   const navigate = useNavigate();
   const { user, logout } = useUser();
 
-  // const isActive = (path: string) => location.pathname === path;
+  const isActive = (path: string) => location.pathname === path;
 // const isActive = string = '';
 
 
@@ -58,8 +58,8 @@ export const Navigation = () => {
     navigate('/');
   };
 
-  if (!user) return null;
-  // if (!user) return <Header />;
+  // if (!user) return null;
+  if (!user) return <Header />;
 
 
   return (

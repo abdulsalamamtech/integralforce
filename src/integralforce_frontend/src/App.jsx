@@ -7,25 +7,25 @@ import { UserProvider, useUser } from "./context/UserContext";
 import { ThemeProvider } from "./components/ThemeProvider";
 import { Navigation } from "./components/Navigation";
 import { Footer } from "./components/Footer";
-// import { FloatingChat } from "./components/FloatingChat";
+import { FloatingChat } from "./components/FloatingChat";
 import { Landing } from "./pages/Landing";
-// import { Auth } from "./pages/Auth";
-// import { Dashboard } from "./pages/Dashboard";
-// import { SelectLevel } from "./pages/SelectLevel";
-// import { Learn } from "./pages/Learn";
-// import { Quiz } from "./pages/Quiz";
-// import { Games } from "./pages/Games";
-// import { Chat } from "./pages/Chat";
-// import { NFTGallery } from "./pages/NFTGallery";
-// import { Leaderboard } from "./pages/Leaderboard";
-// import { Staking } from "./pages/Staking";
-// import { Account } from "./pages/Account";
-// import { Profile } from "./pages/Profile";
-// import { ConvertNFT } from "./pages/ConvertNFT";
-// import { Articles } from "./pages/Articles";
-// import { ArticleDetail } from "./pages/ArticleDetail";
-// import { WriteArticle } from "./pages/WriteArticle";
-// import { AddQuestion } from "./pages/AddQuestion";
+import { Auth } from "./pages/Auth";
+import { Dashboard } from "./pages/Dashboard";
+import { SelectLevel } from "./pages/SelectLevel";
+import { Learn } from "./pages/Learn";
+import { Quiz } from "./pages/Quiz";
+import { Games } from "./pages/Games";
+import { Chat } from "./pages/Chat";
+import { NFTGallery } from "./pages/NFTGallery";
+import { Leaderboard } from "./pages/Leaderboard";
+import { Staking } from "./pages/Staking";
+import { Account } from "./pages/Account";
+import { Profile } from "./pages/Profile";
+import { ConvertNFT } from "./pages/ConvertNFT";
+import { Articles } from "./pages/Articles";
+import { ArticleDetail } from "./pages/ArticleDetail";
+import { WriteArticle } from "./pages/WriteArticle";
+import { AddQuestion } from "./pages/AddQuestion";
 import NotFound from "./pages/NotFound";
 import { Header } from "./components/Header";
 
@@ -50,13 +50,13 @@ const App = () => (
             <main className="flex-1">
               <Routes>
                 <Route path="/" element={<Landing />} />
-                {/* <Route path="/auth" element={<Auth />} /> */}
-                {/* <Route path="/dashboard" element={<Dashboard />} /> */}
-                {/* <Route path="/select-level" element={<SelectLevel />} /> */}
-                {/* <Route path="/learn" element={<Learn />} /> */}
-                {/* <Route path="/quiz" element={<Quiz />} /> */}
-                {/* <Route path="/games" element={<Games />} /> */}
-                {/* <Route path="/chat" element={<Chat />} />
+                <Route path="/auth" element={<Auth />} />
+                <Route path="/dashboard" element={<Dashboard />} />
+                <Route path="/select-level" element={<SelectLevel />} />
+                <Route path="/learn" element={<Learn />} />
+                <Route path="/quiz" element={<Quiz />} />
+                <Route path="/games" element={<Games />} />
+                <Route path="/chat" element={<Chat />} />
                 <Route path="/nft" element={<NFTGallery />} />
                 <Route path="/leaderboard" element={<Leaderboard />} />
                 <Route path="/staking" element={<Staking />} />
@@ -66,7 +66,7 @@ const App = () => (
                 <Route path="/articles" element={<Articles />} />
                 <Route path="/articles/:id" element={<ArticleDetail />} />
                 <Route path="/write-article" element={<WriteArticle />} />
-                <Route path="/add-question" element={<AddQuestion />} /> */}
+                <Route path="/add-question" element={<AddQuestion />} />
                 {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
                 <Route path="*" element={<NotFound />} />
               </Routes>

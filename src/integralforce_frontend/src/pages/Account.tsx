@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import { useUser } from '@/context/UserContext';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
+import { useUser } from '../context/UserContext';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
+import { Button } from '../components/ui/button';
+import { Badge } from '../components/ui/badge';
 import { Copy, Share2, Coins, Trophy, BookOpen, MessageSquare, Gamepad2, PenTool, HelpCircle, Image } from 'lucide-react';
-import { useToast } from '@/hooks/use-toast';
+import { useToast } from '../hooks/use-toast';
 import { useNavigate } from 'react-router-dom';
 
 // Mock user data - in real app, this would come from your data source

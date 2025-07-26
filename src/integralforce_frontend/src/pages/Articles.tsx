@@ -1,13 +1,13 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Input } from '@/components/ui/input';
-import { Badge } from '@/components/ui/badge';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
+import { Button } from '../components/ui/button';
+import { Input } from '../components/ui/input';
+import { Badge } from '../components/ui/badge';
 import { Search, Clock, Eye, Heart, PenTool } from 'lucide-react';
-import { useUser } from '@/context/UserContext';
-import articlesData from '@/data/articles.json';
-import { Header } from '@/components/Header';
+import { useUser } from '../context/UserContext';
+import articlesData from '../data/articles.json';
+import { Header } from '../components/Header';
 
 export const Articles = () => {
   const { user } = useUser();

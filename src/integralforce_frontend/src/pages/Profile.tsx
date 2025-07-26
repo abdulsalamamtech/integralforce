@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { Badge } from '@/components/ui/badge';
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '../components/ui/card';
+import { Badge } from '../components/ui/badge';
 import { Trophy, BookOpen, MessageSquare, Gamepad2, PenTool, HelpCircle, Image } from 'lucide-react';
 
 // Mock user data - in real app, this would be fetched based on username

@@ -1,6 +1,6 @@
 import React from 'react';
-import { useUser } from '@/context/UserContext';
-import { Card } from '@/components/ui/card';
+import { useUser } from '../context/UserContext';
+import { Card } from '../components/ui/card';
 
 export const KPDisplay: React.FC = () => {
   const { user } = useUser();

@@ -1,10 +1,10 @@
 import { useParams, Link, useNavigate } from 'react-router-dom';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
-import { Badge } from '@/components/ui/badge';
+import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
+import { Button } from '../components/ui/button';
+import { Badge } from '../components/ui/badge';
 import { ArrowLeft, Clock, Eye, Heart, Share2, User } from 'lucide-react';
-import { useToast } from '@/hooks/use-toast';
-import articlesData from '@/data/articles.json';
+import { useToast } from '../hooks/use-toast';
+import articlesData from '../data/articles.json';
 
 export const ArticleDetail = () => {
   const { id } = useParams<{ id: string }>();
