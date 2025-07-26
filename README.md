@@ -6,13 +6,13 @@ integral force - To be able to earn while learning on ICP
   <img src="./images/integralforce-image-landing-page.png" alt="integralforce landing page image">
 </div>
 
-### fig 1. landing page image
+### fig 1 landing page image
 
 <div>
   <img src="./images/integralforce-image-dashboard-page.png" alt="integralforce landing page image">
 </div>
 
-### fig 2. dashboard page image
+### fig 2 dashboard page image
 
 # Team Integral - integralforce | integral education | iforce
 
