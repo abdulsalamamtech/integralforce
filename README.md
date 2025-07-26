@@ -6,6 +6,7 @@ integral force - To be able to earn while learning on ICP
   <img src="images/integralforce-image-landing-page.png" alt="integralforce landing page image">
 </div>
 ![integralforce landing page image](images/integralforce-image-landing-page.png)
+
 ### fig 1 landing page image
 
 <div>
