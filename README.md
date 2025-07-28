@@ -4,41 +4,35 @@
 
 integral force - To be able to earn while learning on ICP
 
+[Project images.]: #
 
 <img src="assets/images/integralforce-image-landing-page.png" alt="integralforce landing page image">
 
 ## fig 1 landing page
 
-
 <img src="assets/images/integralforce-image-dashboard-page.png" alt="integralforce landing page image">
 
 ## fig 2 dashboard page
-
 
 ![integralforce all articles page image](assets/images/articles-all.png)
 
 ## fig 3 all articles page
 
-
 ![integralforce quiz human right page image](assets/images/quiz-human-right.png)
 
 ## fig 4 quiz human right page
-
 
 ![integralforce learn freedom of expression page image](assets/images/learn-freedom-of-expression.png)
 
 ## fig 5 learn freedom of expression page
 
-
 ![integralforce user account page image](assets/images/user-account.png)
 
 ## fig 6 user account page
 
-
 ![integralforce application flow image](assets/images/integralforce-user-flow.png)
 
 ## fig 7 application flow
-
 
 # Team Integral - integralforce | integral education | iforce
 
@@ -85,7 +79,7 @@ This project focuses on building an AI-powered personal tutor that promotes lear
 
 ## Challenges
 
-While adding these features to our existing repository, we faced several challenges. Due to technical difficulties, one is that we are not proficient in the svelte programming for the frontend as it keeps populating errors, we decided to write new code to integrate our intended features more efficiently.
+While adding these features to our existing repository, we faced several challenges. Due to technical difficulties, one is that we are not proficient in the Javascript and TypeScrip configuration for the frontend as it keeps populating errors, we decided to modified some part of the code to integrate our intended features more efficiently.
 
 ---
 
