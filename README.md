@@ -79,9 +79,13 @@ This project focuses on building an AI-powered personal tutor that promotes lear
 
 ## Challenges
 
-While adding these features to our existing repository, we faced several challenges. Due to technical difficulties, one is that we are not proficient in the Javascript and TypeScrip configuration for the frontend as it keeps populating errors, we decided to modified some part of the code to integrate our intended features more efficiently.
+While adding these features to the project repository, we faced several challenges. Due to technical difficulties, one is that we are not proficient in the Motoko and TypeScript configuration for the frontend as it keeps populating errors, we decided to modified some part of the code to integrate our intended features more efficiently.
 
 ---
+
+## Other errors
+
+- Typescript build error while deploying to ICP Ninja : [Dfinity Forum](https://forum.dfinity.org/t/i-am-having-typescript-error-on-icp-ninja-deployment/54026)
 
 ## Contact Us
 
@@ -102,6 +106,7 @@ URLs:
 local : http://ucwa4-rx777-77774-qaada-cai.localhost:4943/
 
 Upgraded code for canister integralforce_frontend, with canister ID ucwa4-rx777-77774-qaada-cai
+
 Module hash 6674d62a34b3baf7909421b5a386afb09d9898d970e9b40178534ed30d1f8a4a is already installed.
 
 Upgraded code for canister internet_identity, with canister ID ufxgi-4p777-77774-qaadq-cai
@@ -109,14 +114,20 @@ Deployed canisters.
 
 URLs:
 Frontend canister via browser:
-integralforce_frontend: - http://ucwa4-rx777-77774-qaada-cai.localhost:4943/ (Recommended) - http://127.0.0.1:4943/?canisterId=ucwa4-rx777-77774-qaada-cai (Legacy)
 
-    internet_identity:
-      - http://ufxgi-4p777-77774-qaadq-cai.localhost:4943/ (Recommended)
-      - http://127.0.0.1:4943/?canisterId=ufxgi-4p777-77774-qaadq-cai (Legacy)
+integralforce_frontend: 
+
+- http://ucwa4-rx777-77774-qaada-cai.localhost:4943/ (Recommended) 
+- http://127.0.0.1:4943/?canisterId=ucwa4-rx777-77774-qaada-cai (Legacy)
+
+  internet_identity:
+    - http://ufxgi-4p777-77774-qaadq-cai.localhost:4943/ (Recommended)
+    - http://127.0.0.1:4943/?canisterId=ufxgi-4p777-77774-qaadq-cai (Legacy)
 
 Backend canister via Candid interface:
+
 integralforce_backend: http://127.0.0.1:4943/?canisterId=vizcg-th777-77774-qaaea-cai&id=ulvla-h7777-77774-qaacq-cai
+
 internet_identity: http://127.0.0.1:4943/?canisterId=vizcg-th777-77774-qaaea-cai&id=ufxgi-4p777-77774-qaadq-cai
 
 ---
