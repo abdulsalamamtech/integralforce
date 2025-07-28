@@ -91,9 +91,9 @@ While adding these features to the project repository, we faced several challeng
 
 For more information or inquiries, feel free to contact the team members via email: abdulsalamamtech@gmail.com.
 
-X (Twitter Team Lead) >> https://x.com/AbdulsalamTech
+X (Twitter - Team Lead) >> https://x.com/AbdulsalamTech
 
-X (Twitter Product) >> https://x.com/integralforceic
+X (Twitter -  Product) >> https://x.com/integralforceic
 
 Dorahacks >> https://dorahacks.io/buidl/28855
 
