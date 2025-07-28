@@ -83,7 +83,8 @@
   "name": "integralforce_frontend",
   "private": true,
   "scripts": {
-    "build": "tsc && vite build",
+    
+    "build": "npx tsc && vite build",
     "format": "prettier --write \"src/**/*.{json,js,jsx,ts,tsx,css,scss}\"",
     "prebuild": "dfx generate",
     "setup": "npm i && dfx canister create integralforce_backend && dfx generate integralforce_backend && dfx deploy",
