@@ -26,8 +26,6 @@ export const Articles = () => {
 
   return (
     <div>
-      {/* Page Navigation */}
-      { user ? '' : <Header /> }
 
       {/* Articles List */}
       <div className="min-h-screen bg-background p-4">
