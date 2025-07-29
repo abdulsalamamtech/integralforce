@@ -83,12 +83,13 @@
   "name": "integralforce_frontend",
   "private": true,
   "scripts": {
-    "build": "vite build",
+    "build": "npx tsc && vite build",
     "format": "prettier --write \"src/**/*.{json,js,jsx,ts,tsx,css,scss}\"",
     "prebuild": "npm i --include=dev && dfx generate",
     "setup": "npm i && dfx canister create integralforce_backend && dfx generate integralforce_backend && dfx deploy",
     "start": "vite --port 3000",
-    "test": "vitest run"
+    "test": "vitest run",
+    "dev": "vite"
   },
   "type": "module",
   "version": "0.0.0"
