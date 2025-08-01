@@ -98,3 +98,64 @@ Compete glocally via HUBs in Canada, USA, Argentina, Brazil, Portugal, Bulgaria,
 Let’s code the future! 👨‍💻👩‍💻
 
 Code hard, win big, shape Web3! 🌐 Good luck, Champions 🚀
+
+**Ultimate Goal:**
+
+Deliver a **robust, mainnet-deployed MVP** by the Global Finale, leveraging the hackathon’s extensive resources to maximize project quality and impact.
+
+📈 **Project Evolution** (Between Rounds)
+
+Document continuous improvement:
+
+✅ New features
+✅ Scalability enhancements
+✅ UX improvements
+✅ Product-market fit validation
+
+🏁 Expected Outcomes (Global Finale Deliverables)
+
+✅ Deployed on ICP Mainnet
+✅ Fully functional working demo
+✅ Comprehensive documentation
+✅ Clear go-to-market strategyI confirm that my BUIDL has a link to the GitHub repository and it is public or invited DevRel.
+✅ Grant-ready status
+✅ Investor-attractive metrics
+
+
+
+### Important Links
+🔥 Ready to Build at the Edge of Web3 + AI?
+- https://taikai.network/icp-eu-alliance/hackathons/VIBATHON
+
+
+ICP Hackathon Cheat Sheet
+- https://dfinityorg.notion.site/ICP-Hackathon-Cheat-Sheet-b2921239266149de81021412f572351c
+
+Workshops & Learning Resources
+DFINITY’s "Zero to dApp" YouTube series
+
+
+-------------------------------------
+Submit a BUIDL to participate in “ICP - WCHL25 - National Round” You can choose to enter with an existing BUIDL or start fresh with a new one. 
+
+Fully on chain
+
+Discord username: abdulsalamamtech
+
+Email: abdulsalamamtech@gmail.com
+
+Name of the project that got qualified. Full list here: https://shorturl.at/eCaEj:  Integral Force
+
+Funnel Assigned: Nigeria
+
+GitHub repository: https://github.com/abdulsalamamtech/integralforce
+
+link to a video Demo: 
+link to a Pitch video
+
+I confirm that my BUIDL has a link to the GitHub repository and it is public or invited DevRel.
+
+
+-----------------------------------------
+
+Adoption of ICP to people of different age/gender/region
