@@ -29,6 +29,9 @@ import { AddQuestion } from "./pages/AddQuestion";
 import NotFound from "./pages/NotFound";
 import { Header } from "./components/Header";
 
+// all chat 
+import AllChat from "./pages/AllChat";
+
 // const { user, logout } = useUser();
 const queryClient = new QueryClient();
 
@@ -50,6 +53,7 @@ const App = () => (
             <main className="flex-1">
               <Routes>
                 <Route path="/" element={<Landing />} />
+                <Route path="/all-chat" element={<AllChat />} />
                 <Route path="/auth" element={<Auth />} />
                 <Route path="/dashboard" element={<Dashboard />} />
                 <Route path="/select-level" element={<SelectLevel />} />
