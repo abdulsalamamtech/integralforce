@@ -1,3 +1,5 @@
 [dependencies]
-base = "0.15.1"
+# for icp ninja use base = "0.14.9" else use base = "0.15.1"
+# base = "0.15.1"
+base = "0.14.9"
 llm = "2.1.0"
