@@ -29,8 +29,7 @@ import { AddQuestion } from "./pages/AddQuestion";
 import NotFound from "./pages/NotFound";
 import { Header } from "./components/Header";
 
-// all chat
-import AllChat from "./pages/AllChat";
+
 // answer question
 import AnswerQuestion from "./pages/AnswerQuestion";
 
@@ -53,7 +52,6 @@ const App = () => (
               <main className="flex-1">
                 <Routes>
                   <Route path="/" element={<Landing />} />
-                  <Route path="/all-chat" element={<AllChat />} />
                   <Route path="/answer-question" element={<AnswerQuestion />} />
                   <Route path="/auth" element={<Auth />} />
                   <Route path="/dashboard" element={<Dashboard />} />

@@ -40,7 +40,7 @@ const AnswerQuestion = () => {
   return (
     <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-blue-600 to-indigo-900 p-6">
       <div className="w-full max-w-lg p-8 bg-white bg-opacity-10 backdrop-blur-lg shadow-xl rounded-2xl border border-white/20">
-        <h1 className="text-3xl font-bold text-white text-center mb-6">AI Quiz Generator</h1>
+        <h1 className="text-3xl font-bold text-white text-center mb-6">AI Powered Quiz Generator</h1>
 
         <div className="mb-6">
           <label className="block text-white text-lg mb-2">Enter a topic:</label>
