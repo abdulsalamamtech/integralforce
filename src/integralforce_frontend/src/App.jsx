@@ -29,13 +29,13 @@ import { AddQuestion } from "./pages/AddQuestion";
 import NotFound from "./pages/NotFound";
 import { Header } from "./components/Header";
 
-// all chat 
+// all chat
 import AllChat from "./pages/AllChat";
+// answer question
+import AnswerQuestion from "./pages/AnswerQuestion";
 
 // const { user, logout } = useUser();
 const queryClient = new QueryClient();
-
-
 
 const App = () => (
   <QueryClientProvider client={queryClient}>
@@ -45,47 +45,48 @@ const App = () => (
           <Toaster />
           <Sonner />
           <BrowserRouter>
-          <div className="min-h-screen bg-background flex flex-col">
-            {/* Navigation */}
-            <Navigation />
+            <div className="min-h-screen bg-background flex flex-col">
+              {/* Navigation */}
+              <Navigation />
 
-            {/* Main content */}
-            <main className="flex-1">
-              <Routes>
-                <Route path="/" element={<Landing />} />
-                <Route path="/all-chat" element={<AllChat />} />
-                <Route path="/auth" element={<Auth />} />
-                <Route path="/dashboard" element={<Dashboard />} />
-                <Route path="/select-level" element={<SelectLevel />} />
-                <Route path="/learn" element={<Learn />} />
-                <Route path="/quiz" element={<Quiz />} />
-                <Route path="/games" element={<Games />} />
-                <Route path="/chat" element={<Chat />} />
-                <Route path="/nft" element={<NFTGallery />} />
-                <Route path="/leaderboard" element={<Leaderboard />} />
-                <Route path="/staking" element={<Staking />} />
-                <Route path="/account" element={<Account />} />
-                <Route path="/profile/:username" element={<Profile />} />
-                <Route path="/convert-nft" element={<ConvertNFT />} />
-                <Route path="/articles" element={<Articles />} />
-                <Route path="/articles/:id" element={<ArticleDetail />} />
-                <Route path="/write-article" element={<WriteArticle />} />
-                <Route path="/add-question" element={<AddQuestion />} />
-                {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
-                <Route path="*" element={<NotFound />} />
-              </Routes>
-            </main>
+              {/* Main content */}
+              <main className="flex-1">
+                <Routes>
+                  <Route path="/" element={<Landing />} />
+                  <Route path="/all-chat" element={<AllChat />} />
+                  <Route path="/answer-question" element={<AnswerQuestion />} />
+                  <Route path="/auth" element={<Auth />} />
+                  <Route path="/dashboard" element={<Dashboard />} />
+                  <Route path="/select-level" element={<SelectLevel />} />
+                  <Route path="/learn" element={<Learn />} />
+                  <Route path="/quiz" element={<Quiz />} />
+                  <Route path="/games" element={<Games />} />
+                  <Route path="/chat" element={<Chat />} />
+                  <Route path="/nft" element={<NFTGallery />} />
+                  <Route path="/leaderboard" element={<Leaderboard />} />
+                  <Route path="/staking" element={<Staking />} />
+                  <Route path="/account" element={<Account />} />
+                  <Route path="/profile/:username" element={<Profile />} />
+                  <Route path="/convert-nft" element={<ConvertNFT />} />
+                  <Route path="/articles" element={<Articles />} />
+                  <Route path="/articles/:id" element={<ArticleDetail />} />
+                  <Route path="/write-article" element={<WriteArticle />} />
+                  <Route path="/add-question" element={<AddQuestion />} />
+                  {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
+                  <Route path="*" element={<NotFound />} />
+                </Routes>
+              </main>
 
-            {/* Footer */}
-            <Footer />
+              {/* Footer */}
+              <Footer />
 
-            {/* Floating chat */}
-            {/* <FloatingChat /> */}
-          </div>
-        </BrowserRouter>
-      </TooltipProvider>
-    </UserProvider>
-  </ThemeProvider>
+              {/* Floating chat */}
+              {/* <FloatingChat /> */}
+            </div>
+          </BrowserRouter>
+        </TooltipProvider>
+      </UserProvider>
+    </ThemeProvider>
   </QueryClientProvider>
 );
 

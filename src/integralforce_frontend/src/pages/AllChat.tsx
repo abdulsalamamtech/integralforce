@@ -6,14 +6,27 @@ import userImg from '/user.svg';
 
 
 const AllChat = () => {
-  const [chat, setChat] = useState([
+
+  type ChatMessage =
+  | { user: { content: string } }
+  | { system: { content: string } };
+
+  // const [chat, setChat] = useState([
+  //   {
+  //     system: { content: "I'm a sovereign AI agent living on the Internet Computer. Ask me anything." }
+  //   }
+  // ]);
+
+  const [chat, setChat] = useState<ChatMessage[]>([
     {
       system: { content: "I'm a sovereign AI agent living on the Internet Computer. Ask me anything." }
     }
-  ]);
+  ]);  
+
   const [inputValue, setInputValue] = useState('');
   const [isLoading, setIsLoading] = useState(false);
-  const chatBoxRef = useRef(null);
+  // const chatBoxRef = useRef(null);
+  const chatBoxRef = useRef<HTMLDivElement>(null);
 
   const formatDate = (date : any) => {
     const h = '0' + date.getHours();
@@ -47,11 +60,11 @@ const AllChat = () => {
     }
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e : React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     if (!inputValue.trim() || isLoading) return;
 
-    const userMessage = {
+    const userMessage : any = {
       user: { content: inputValue }
     };
     const thinkingMessage = {
@@ -79,7 +92,12 @@ const AllChat = () => {
             const isUser = 'user' in message;
             const img = isUser ? userImg : botImg;
             const name = isUser ? 'User' : 'System';
-            const text = isUser ? message.user.content : message.system.content;
+            // const text = isUser ? message.user.content : message.system.content;
+
+            const text = isUser
+                ? (message as { user: { content: string } }).user.content
+                : (message as { system: { content: string } }).system.content;
+            
 
             return (
               <div key={index} className={`flex ${isUser ? 'justify-end' : 'justify-start'} mb-4`}>

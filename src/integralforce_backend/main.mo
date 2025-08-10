@@ -4,8 +4,12 @@
 
 import LLM "mo:llm";
 import Nat64 "mo:base/Nat64";
+import Text "mo:base/Text";
+import Debug "mo:base/Debug";
 
-actor {
+// this actor or actor class should be declared `persistent`
+// actor {
+persistent actor{
 
     // Counter variable to keep track of count
   private stable var counter : Nat64 = 0;
@@ -45,4 +49,88 @@ actor {
           case null "";
       };
   };
+
+  public func example() {
+      let response = await LLM.chat(#Llama3_1_8B)
+        .withMessages([
+          #system_ {
+            content = "You are a helpful assistant."
+          },
+          #user {
+            content = "What's the weather in San Francisco?"
+          },
+        ])
+        .withTools([LLM.tool("get_weather")
+          .withDescription("Get current weather for a location")
+          .withParameter(
+            LLM.parameter("location", #String)
+              .withDescription("The location to get weather for")
+              .isRequired()
+          )
+          .build()
+        ])
+        .send();
+
+      switch (response.message.content) {
+          case (?text) {
+              // Process the text response
+              Debug.print(text);
+          };
+          case null {
+              // Handle null response
+              Debug.print("No content returned");
+          };
+      };
+  };
+
+
+
+  stable var currentQuestion : Text = "";
+  stable var correctAnswer : Text = "";
+
+  public func generateQuestion(topic: Text) : async Text {
+      let input = "Create one essay question about \"" # topic # "\" without any introductory text, just display the question itself.";
+      let response = await LLM.prompt(#Llama3_1_8B, input);
+      
+      currentQuestion := response;
+      correctAnswer := "The correct answer";
+      return response;
+  };
+
+  public func evaluateAnswer(userAnswer: Text) : async Text 
+  {
+      // let messages = [
+      //     {
+      //         role = #system_;
+      //         content = "You are a helpful assistant.";
+      //     },
+      //     {
+      //         role = #user;
+      //         content = "Is the answer '" # userAnswer # "' correct for the question '" # currentQuestion # "'?";
+      //     }
+      // ];
+      
+      // let response = await LLM.chat(#Llama3_1_8B, messages);
+      // return response;
+
+      let messages = [
+          #system_ {
+              content = "You are a helpful assistant."
+          },
+          #user {
+              content = "Is the answer '" # userAnswer # "' correct for the question '" # currentQuestion # "'?"
+          }
+      ];
+      // Send the chat request with the messages
+      let response = await LLM.chat(#Llama3_1_8B).withMessages(messages).send();
+
+      // Process the response
+      // Return the content of the response message
+      switch (response.message.content) {
+          case (?text) text;
+          case null "";
+      };      
+  };
+
+
 };
