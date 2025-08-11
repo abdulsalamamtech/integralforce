@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
+import { useUser } from '../context/UserContext';
+import { useToast } from '../hooks/use-toast';
 import { integralforce_backend } from '../../../declarations/integralforce_backend';
 import '/index.css';
+const { user, addKP, deductKP } = useUser();
+const { toast } = useToast();
 
 const AnswerQuestion = () => {
   const [topic, setTopic] = useState('');
@@ -30,6 +34,22 @@ const AnswerQuestion = () => {
     try {
       const response = await integralforce_backend.evaluateAnswer(inputAnswer);
       setEvaluationResult(response);
+      // set earning 3 KP for each question answered
+      // await integralforce_backend.earnKP(3);
+      let kpEarned : number = 0;
+        if (kpEarned > 0) {
+          addKP(kpEarned, `Answer question completion`);
+          toast({
+            title: "Answer Question Completed!",
+            description: `You earned ${kpEarned} KP!`,
+          });
+        } else {
+          toast({
+            title: "Answer Question Completed",
+            description: "Better luck next time! Try again to improve your score.",
+            variant: "destructive",
+          });
+        }
     } catch (e) {
       console.error(e);
     } finally {
@@ -42,8 +62,16 @@ const AnswerQuestion = () => {
     // <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-indigo-600 to-indigo-900 p-6">
     <div className="flex min-h-screen items-center justify-center bg-gradient-card p-6">
       <div className="w-full max-w-lg p-8 text-card-foreground bg-opacity-10 backdrop-blur-lg shadow-xl rounded-2xl border border-white/20">
-        <h1 className="text-3xl font-bold text-white text-center mb-6">AI Powered Quiz Generator</h1>
+        <h1 className="text-3xl font-bold text-white text-center mb-2">AI Powered Quiz Generator</h1>
+        {/* small description */}
+        <p className="text-white text-center mb-6">
+          Generate questions based on topics and evaluate your answers with AI.
+          {/* earn 3 kp for each question answered */}
+          <br />
+          <span className="text-yellow-400 font-semibold">Earn 3 KP for each question answered!</span>
+        </p>
 
+        {/* Select Question Topic */}
         <div className="mb-6">
           <label className="block text-white text-lg mb-2">Enter a topic:</label>
           <input
@@ -67,6 +95,7 @@ const AnswerQuestion = () => {
 
         </div>
 
+        {/* Generated Question Display */}
         {generatedQuestion && (
           <div className="mb-6 p-4 bg-white/20 text-white rounded-lg border border-white/30">
             <strong>Question:</strong>
@@ -74,6 +103,7 @@ const AnswerQuestion = () => {
           </div>
         )}
 
+        {/* Generated Question Response Form */}
         {generatedQuestion && (
           <div className="mb-6">
             <label className="block text-white text-lg mb-2">Your Answer:</label>
@@ -95,6 +125,7 @@ const AnswerQuestion = () => {
           </div>
         )}
 
+        {/* Evaluated Result */}
         {evaluationResult && (
           <div className="p-4 bg-white/20 text-white rounded-lg border border-white/30 text-center">
             <strong>Evaluation Result:</strong>
