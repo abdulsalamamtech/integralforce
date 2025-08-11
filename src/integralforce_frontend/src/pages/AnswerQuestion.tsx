@@ -3,10 +3,10 @@ import { useUser } from '../context/UserContext';
 import { useToast } from '../hooks/use-toast';
 import { integralforce_backend } from '../../../declarations/integralforce_backend';
 import '/index.css';
-const { user, addKP, deductKP } = useUser();
-const { toast } = useToast();
 
 const AnswerQuestion = () => {
+  const { user, addKP, deductKP } = useUser();
+  const { toast } = useToast();
   const [topic, setTopic] = useState('');
   const [generatedQuestion, setGeneratedQuestion] = useState('');
   const [inputAnswer, setInputAnswer] = useState('');
@@ -58,7 +58,6 @@ const AnswerQuestion = () => {
   };
 
   return (
-    // bg-gradient-card
     // <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-indigo-600 to-indigo-900 p-6">
     <div className="flex min-h-screen items-center justify-center bg-gradient-card p-6">
       <div className="w-full max-w-lg p-8 text-card-foreground bg-opacity-10 backdrop-blur-lg shadow-xl rounded-2xl border border-white/20">
