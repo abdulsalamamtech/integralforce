@@ -4,6 +4,8 @@ import { useUser } from '../context/UserContext';
 import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
 import { Button } from '../components/ui/button';
 import { Input } from '../components/ui/input';
+import { ArrowRight, BookOpen, Trophy, Coins, Zap, Shield, Globe } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import { Badge } from '../components/ui/badge';
 import { ScrollArea } from '../components/ui/scroll-area';
 import { useToast } from '../components/ui/use-toast';
@@ -46,8 +48,18 @@ export const Chat: React.FC = () => {
     return (
       <div className="min-h-screen bg-gradient-card p-4 flex items-center justify-center">
         <Card>
-          <CardContent className="p-6 text-center">
-            <p>Please log in to access the AI Chat feature.</p>
+          <CardContent className="p-10 text-center">
+            <h2 className='text-2xl font-bold py-8'>Please log in to access the AI Chat feature.</h2>
+            <Link to="/auth">
+              <Button
+                variant="hero"
+                size="lg"
+                className="text-lg px-8 py-4 shadow-glow hover:shadow-primary/50 transition-all duration-300 group"
+              >
+                Get Started
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </Button>
+            </Link> 
           </CardContent>
         </Card>
       </div>
@@ -112,7 +124,8 @@ export const Chat: React.FC = () => {
 
     // Using motoko llm on the chat
     try {
-      const response = await integralforce_backend.chat(`Response as if we'r having a chat. Give me a very short a precise answer to the following question: ${inputMessage}`);
+      const prompt: string = `I will be asking question related to ${selectedChat.category ?? 'social impact'} and ${selectedChat.description ?? 'humanity'}. Response as if we're having a chat. Give me a very short and precise answer to the following question: ${inputMessage}`;
+      const response = await integralforce_backend.chat(prompt);
       const aiResponse: Message = {
         id: `msg_${Date.now() + 1}`,
         type: 'ai',
