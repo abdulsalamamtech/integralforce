@@ -36,7 +36,7 @@ const AnswerQuestion = () => {
       setEvaluationResult(response);
       // set earning 3 KP for each question answered
       // await integralforce_backend.earnKP(3);
-      let kpEarned : number = 0;
+      let kpEarned : number = 3;
         if (kpEarned > 0) {
           addKP(kpEarned, `Answer question completion`);
           toast({
