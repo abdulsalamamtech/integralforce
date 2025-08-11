@@ -179,7 +179,7 @@ export const Chat: React.FC = () => {
 
   if (selectedChat) {
     return (
-      <div className="min-h-screen bg-gradient-card p-4">
+      <div className="min-h-auto bg-gradient-card p-4">
         <div className="max-w-4xl mx-auto">
           <Card>
             <CardHeader className="flex flex-row items-center justify-between">
