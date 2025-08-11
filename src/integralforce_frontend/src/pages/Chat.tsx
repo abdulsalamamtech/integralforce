@@ -1,4 +1,5 @@
 import React, { useState, useRef, useEffect } from 'react';
+import { integralforce_backend } from '../../../declarations/integralforce_backend';
 import { useUser } from '../context/UserContext';
 import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
 import { Button } from '../components/ui/button';
@@ -88,25 +89,57 @@ export const Chat: React.FC = () => {
     setIsLoading(true);
 
     // Simulate AI response
-    setTimeout(() => {
+    // setTimeout(() => {
+    //   const aiResponse: Message = {
+    //     id: `msg_${Date.now() + 1}`,
+    //     type: 'ai',
+    //     content: generateAIResponse(inputMessage),
+    //     timestamp: new Date().toISOString()
+    //   };
+
+    //   setMessages(prev => [...prev, aiResponse]);
+    //   setIsLoading(false);
+
+    //   // Award 1 KP for meaningful interaction
+    //   addKP(1, 'AI Chat Interaction');
+
+    //   toast({
+    //     title: "+1 KP Earned",
+    //     description: "Great question! Keep learning.",
+    //   });
+    // }, 1000 + Math.random() * 2000);
+
+
+    // Using motoko llm on the chat
+    try {
+      const response = await integralforce_backend.chat(`Response as if we'r having a chat. Give me a very short a precise answer to the following question: ${inputMessage}`);
       const aiResponse: Message = {
         id: `msg_${Date.now() + 1}`,
         type: 'ai',
-        content: generateAIResponse(inputMessage),
+        content: response,
         timestamp: new Date().toISOString()
       };
-      
+
       setMessages(prev => [...prev, aiResponse]);
       setIsLoading(false);
-      
+
       // Award 1 KP for meaningful interaction
       addKP(1, 'AI Chat Interaction');
-      
+
       toast({
         title: "+1 KP Earned",
         description: "Great question! Keep learning.",
       });
-    }, 1000 + Math.random() * 2000);
+    } catch (error) {
+      console.error("Error sending message:", error);
+      toast({
+        title: "Error",
+        description: "Failed to send message. Please try again.",
+        variant: "destructive",
+      });
+      setIsLoading(false);
+      return;
+    }
   };
 
   const generateAIResponse = (userInput: string): string => {
@@ -118,7 +151,7 @@ export const Chat: React.FC = () => {
       "Children have special rights under the Convention on the Rights of the Child, including protection from harm and the right to participate in decisions affecting them.",
       "Freedom of expression is a cornerstone of democracy, but it comes with responsibilities and may be limited to protect others' rights and safety."
     ];
-    
+
     return responses[Math.floor(Math.random() * responses.length)];
   };
 
@@ -157,11 +190,10 @@ export const Chat: React.FC = () => {
                       className={`flex ${message.type === 'user' ? 'justify-end' : 'justify-start'}`}
                     >
                       <div
-                        className={`max-w-xs lg:max-w-md px-4 py-2 rounded-lg ${
-                          message.type === 'user'
+                        className={`max-w-xs lg:max-w-md px-4 py-2 rounded-lg ${message.type === 'user'
                             ? 'bg-primary text-primary-foreground'
                             : 'bg-muted'
-                        }`}
+                          }`}
                       >
                         <p className="text-sm">{message.content}</p>
                         <p className="text-xs opacity-70 mt-1">
@@ -180,7 +212,8 @@ export const Chat: React.FC = () => {
                   <div ref={messagesEndRef} />
                 </div>
               </ScrollArea>
-              
+
+              {/* Chat Input */}
               <div className="flex gap-2">
                 <Input
                   value={inputMessage}
@@ -231,7 +264,7 @@ export const Chat: React.FC = () => {
                     <span className="text-sm font-medium">Cost:</span>
                     <Badge variant="outline">{chat.cost} KP</Badge>
                   </div>
-                  <Button 
+                  <Button
                     onClick={() => handleStartChat(chat)}
                     disabled={user.knowledgePoints < chat.cost}
                     size="sm"
