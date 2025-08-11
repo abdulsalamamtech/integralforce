@@ -59,8 +59,9 @@ const AnswerQuestion = () => {
 
   return (
     // <div className="flex min-h-screen items-center justify-center bg-gradient-to-br from-indigo-600 to-indigo-900 p-6">
-    <div className="flex min-h-screen items-center justify-center bg-gradient-card p-6">
-      <div className="w-full max-w-lg p-8 text-card-foreground bg-opacity-10 backdrop-blur-lg shadow-xl rounded-2xl border border-white/20">
+    <div className="flex items-center justify-center bg-gradient-card p-6 min-h-fit">
+      {/* w-full max-w-lg */}
+      <div className="w-full md:w-[70%] p-8 text-card-foreground bg-opacity-10 backdrop-blur-lg shadow-xl rounded-2xl border border-white/20">
         <h1 className="text-3xl font-bold text-white text-center mb-2">AI Powered Quiz Generator</h1>
         {/* small description */}
         <p className="text-white text-center mb-6">
