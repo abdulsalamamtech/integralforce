@@ -82,9 +82,9 @@ export const Landing = () => {
               </Link>
               <a href="https://www.youtube.com/@DFINITY" target="_blank" rel="noopener noreferrer">
                 <Button 
-                  variant="outline" 
+                  variant="hero" 
                   size="lg" 
-                  className="text-lg px-8 py-4 border-white/20 text-white hover:bg-white/10"
+                  className="text-lg px-8 py-4 shadow-glow hover:shadow-primary/50 transition-all duration-300 group hover:bg-white/10"
                 >
                   Watch Demo
                 </Button>

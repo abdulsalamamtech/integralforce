@@ -56,9 +56,15 @@ export const Auth: React.FC = () => {
                 className="w-full"
                 disabled={!username.trim()}
               >
-                Start Learning & Earn +1 KP
+                Start Learning & Earn +1 KP (Recommended)
               </Button>
             </form>
+
+             <div className="mt-4 text-center">
+              <Link to="/login-with-id" className="text-primary hover:underline text-sm">
+                Use Internet Identity Instead (Testing)
+              </Link>
+            </div>
             
             <div className="mt-4 text-center">
               <Link to="/" className="text-primary hover:underline text-sm">
