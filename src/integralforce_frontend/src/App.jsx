@@ -28,6 +28,7 @@ import { WriteArticle } from "./pages/WriteArticle";
 import { AddQuestion } from "./pages/AddQuestion";
 import NotFound from "./pages/NotFound";
 import { Header } from "./components/Header";
+import LoginWithId from "./pages/LoginWithId.jsx";
 
 
 // answer question
@@ -53,6 +54,8 @@ const App = () => (
                 <Routes>
                   <Route path="/" element={<Landing />} />
                   <Route path="/answer-question" element={<AnswerQuestion />} />
+                  {/* LoginWithId */}
+                  <Route path="/login-with-id" element={<LoginWithId />} />
                   <Route path="/auth" element={<Auth />} />
                   <Route path="/dashboard" element={<Dashboard />} />
                   <Route path="/select-level" element={<SelectLevel />} />
