@@ -6,6 +6,15 @@ import LLM "mo:llm";
 import Nat64 "mo:base/Nat64";
 import Text "mo:base/Text";
 import Debug "mo:base/Debug";
+import Principal "mo:base/Principal";
+import Cycles "mo:base/ExperimentalCycles";
+import Nat "mo:base/Nat";
+
+// persistent actor Whoami {
+//   public query (message) func whoami() : async Principal {
+//     message.caller;
+//   };
+// };
 
 // this actor or actor class should be declared `persistent`
 // actor {
@@ -119,5 +128,23 @@ persistent actor {
       case null "";
     };
   };
+
+  public query (message) func greetCaller() : async Text {
+    return "Hello, " # Principal.toText(message.caller) # "!";
+  };
+
+   public query (message) func whoami() : async Principal {
+    return message.caller;
+  };
+
+
+  // Return the principal identifier of this canister via the optional `this` binding.
+  // This is much quicker than `id()` above, since it avoids the latency of `await whoami()`.
+  public func idQuick() : async  (Nat, Nat) {
+    let before = Cycles.balance();
+    Debug.print("Cycles before: " # Nat.toText(before));
+    let after = Cycles.balance();
+    return (before, after);
+  };  
 
 };
